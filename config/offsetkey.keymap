@@ -44,7 +44,12 @@
             tapping-term-ms = <200>;
         };
 
-
+        encoder_msc_var: encoder_msc_var {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENCODER_MSC_VAR";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
     };
 
     combos {
@@ -95,6 +100,8 @@
 &trans     &trans           &mkp MCLK      &mkp LCLK              &mkp RCLK                                 &trans          &trans           &trans                &trans                 &trans             &bt BT_CLR_ALL  &bt BT_CLR           &trans
 &trans     &trans           &trans         &trans     &trans      &trans                   &trans           &trans          &trans           &trans
             >;
+
+            sensor-bindings = <&encoder_msc_var SCRL_UP SCRL_DOWN>;
         };
 
         layer_3 {
