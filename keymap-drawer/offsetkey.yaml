@@ -15,7 +15,7 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - F5
+  - $$mdi:apple-keyboard-caps$$
   - '6'
   - $$mdi:keyboard-tab$$
   - Q
@@ -31,9 +31,9 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
-  - RGB ON
+  - PgUp
   - T
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
@@ -46,7 +46,7 @@ layers:
   - {t: ;, s: ':'}
   - .
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - RGB OFF
+  - PgDn
   - G
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -63,12 +63,12 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
   - B
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - '1'
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '1'}
+  - {t: '$$mdi:keyboard-space$$', h: '1'}
   - $$mdi:apple-keyboard-option$$
   - '2'
   - $$mdi:apple-keyboard-control$$
@@ -120,16 +120,16 @@ layers:
   - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '1'
-  - '2'
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
   - '3'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - '7'
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ins
@@ -153,8 +153,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
