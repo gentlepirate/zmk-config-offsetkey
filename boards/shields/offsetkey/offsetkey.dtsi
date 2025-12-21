@@ -49,6 +49,7 @@ backlight: pwmleds {
         steps = <40>;
         a-gpios = <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 	    b-gpios = <&gpio0 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		bindings = <&scroll_up &scroll_down>;	
 		status = "disabled";
 	};
 
