@@ -17,19 +17,6 @@
         zmk,backlight = &backlight;
     };
 
-behaviors {
-    scroll_up: scroll_up {
-        compatible = "zmk,behavior-mouse-scroll";
-        #binding-cells = <0>;
-        scroll = <1>;  // 正数表示向上滚动
-    };
-    scroll_down: scroll_down {
-        compatible = "zmk,behavior-mouse-scroll";
-        #binding-cells = <0>;
-        scroll = <-1>; // 负数表示向下滚动
-    };
-};
-
 backlight: pwmleds {
     compatible = "pwm-leds";
    // pwm_led_0: pwm_led_0 {
@@ -49,7 +36,6 @@ backlight: pwmleds {
         steps = <40>;
         a-gpios = <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 	    b-gpios = <&gpio0 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		bindings = <&scroll_up &scroll_down>;	
 		status = "disabled";
 	};
 
