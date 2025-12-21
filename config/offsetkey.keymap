@@ -44,16 +44,7 @@
             tapping-term-ms = <200>;
         };
 
-    scroll_up: scroll_up {
-        compatible = "zmk,behavior-mouse-scroll";
-        #binding-cells = <0>;
-        scroll = <1>;  // 正数表示向上滚动
-    };
-    scroll_down: scroll_down {
-        compatible = "zmk,behavior-mouse-scroll";
-        #binding-cells = <0>;
-        scroll = <-1>; // 负数表示向下滚动
-    };
+
     };
 
     combos {
