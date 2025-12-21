@@ -25,6 +25,13 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <180>;
         };
+
+        msc_dec: msc_dec {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MSC_DEC";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        };
     };
 
     combos {
@@ -46,11 +53,11 @@
 &mt LEFT_CONTROL ESCAPE  &kp A      &kp S      &kp D         &kp F      &kp G                    &kp H      &kp J        &kp K          &kp L    &kp BACKSPACE  &mt RCTRL DELETE    &kp ENTER     &kp PAGE_DOWN               &kp G
 &kp LSHFT                &kp Z      &kp X      &kp C         &kp V      &kp B                    &kp N      &kp M        &kp COMMA      &kp DOT  &kp FSLH       &kp RSHFT           &kp UP_ARROW  &kp DELETE                  &kp B
 &mkp LCLK                &mkp RCLK  &kp LCMD   &kp LEFT_ALT             &lt 1 ENTER                         &lt 1 SPACE  &kp RIGHT_ALT  &mo 2    &kp RCTRL      &kp LEFT            &kp DOWN      &kp RIGHT                   &kp SPACE
-&mkp LCLK                &mkp RCLK  &mkp RCLK  &mkp LCLK     &mkp MCLK  &kp SPACE                &mkp LCLK  &mkp LCLK    &mkp RCLK      &none  
+&mkp LCLK                &mkp RCLK  &mkp RCLK  &mkp LCLK     &mkp MCLK  &kp SPACE                &mkp LCLK  &mkp LCLK    &mkp RCLK      &none
             >;
 
             label = "BASE";
-            sensor-bindings = <&msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&msc_dec>;
         };
 
         layer_1 {
