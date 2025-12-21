@@ -77,9 +77,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-left-bold$$
+  - $$mdi:mouse-right-click-outline$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-down-bold$$
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
@@ -135,10 +135,10 @@ layers:
   - Ins
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - PG DN
+  - PG DN
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
