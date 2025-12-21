@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MSC_DEC";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&mkp LCLK>, <&msc SCRL_UP>;
         };
     };
 
