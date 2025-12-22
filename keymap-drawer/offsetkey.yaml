@@ -33,7 +33,7 @@ layers:
   - {t: \, s: '|'}
   - PgUp
   - T
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - A
   - S
   - D
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PgDn
   - G
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
   - Z
   - X
   - C
@@ -65,9 +65,9 @@ layers:
   - B
   - '&mkp MB4'
   - '&mkp MB5'
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', h: '1'}
+  - {t: '[', h: '3', s: '{'}
+  - {t: ']', h: '1', s: '}'}
+  - {t: '$$mdi:keyboard-return$$', h: 'Sft+$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - $$mdi:apple-keyboard-option$$
   - '2'
@@ -82,7 +82,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:keyboard-space$$
-  - $$mdi:mouse-left-click-outline$$
+  - '&mkp MB4'
   - {t: '$$mdi:mouse-left-click-outline$$', h: '3'}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -152,8 +152,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:pan-down$$
-  - {t: '$$mdi:pan-up$$', type: held}
+  - {t: '$$mdi:pan-down$$', type: held}
+  - $$mdi:pan-up$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -323,7 +323,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -341,7 +341,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
