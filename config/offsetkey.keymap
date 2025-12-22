@@ -61,6 +61,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        kp_mkp: kp_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_MKP";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -77,7 +86,7 @@
 
         BASE {
             bindings = <
-&lt 2 ESCAPE   &mkp_kp LCLK F1  &mkp_kp RCLK F2  &mkp_kp MCLK F3  &kp F4     &kp F5       &kp F6      &kp F7     &kp F8          &kp F9       &kp F10      &kp F11        &kp F12             &kp BSPC         &kp CAPS                      &none
+&lt 2 ESCAPE   &kp_mkp F1 LCLK  &kp_mkp F2 RCLK  &mkp_kp MCLK F3  &kp F4     &kp F5       &kp F6      &kp F7     &kp F8          &kp F9       &kp F10      &kp F11        &kp F12             &kp BSPC         &kp CAPS                      &none
 &lt 2 TAB      &kp Q            &kp W            &kp E            &kp R      &kp T                    &kp Y      &kp U           &kp I        &kp O        &kp P          &lt 2 LEFT_BRACKET  &kp RBKT         &lt 2 BACKSLASH  &kp PAGE_UP  &none
 &kp LCTRL      &kp A            &kp S            &kp D            &kp F      &kp G                    &kp H      &kp J           &kp K        &kp L        &kp BACKSPACE  &mt RSHIFT DELETE   &mt RCTRL ENTER  &kp PAGE_DOWN                 &none
 &kp LSHIFT     &kp Z            &kp X            &kp C            &kp V      &kp B                    &kp N      &kp M           &kp COMMA    &kp DOT      &kp FSLH       &kp RSHFT           &kp UP_ARROW     &kp DELETE                    &none
