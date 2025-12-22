@@ -1,10 +1,10 @@
 layout: {zmk_keyboard: offsetkey}
 layers:
   BASE:
+  - {t: '$$mdi:keyboard-esc$$', h: '2'}
   - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - F2
-  - F3
   - F4
   - F5
   - F6
@@ -30,10 +30,10 @@ layers:
   - P
   - {t: '[', h: '2', s: '{'}
   - {t: ']', s: '}'}
-  - {t: \, s: '|'}
+  - {t: \, h: '2', s: '|'}
   - PgUp
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - PgDn
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -65,8 +65,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: LGUI}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-return$$', h: '1'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '-', h: '2', s: _}
@@ -173,7 +173,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
-  - '~'
+  - {t: '~', type: held}
   - F1
   - F2
   - F3
@@ -189,7 +189,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - F6
-  - {t: '~', type: held}
+  - {t: '~', type: held alternate}
   - '!'
   - '@'
   - '#'
@@ -202,7 +202,7 @@ layers:
   - )
   - {t: _, type: held alternate}
   - +
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
