@@ -85,7 +85,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:mouse-left-click-outline$$', h: '3'}
   - $$mdi:mouse-right-click-outline$$
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   '1':
   - '&mkp MB4'
   - '&mkp MB4'
