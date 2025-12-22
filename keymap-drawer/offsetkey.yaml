@@ -103,7 +103,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - F6
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -189,7 +189,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - F6
-  - {type: held}
+  - {t: '~', type: held}
   - '!'
   - '@'
   - '#'
