@@ -88,9 +88,9 @@ layers:
   - A
   '1':
   - '&mkp MB4'
+  - '&mkp MB4'
   - '&mkp MB5'
-  - F2
-  - F3
+  - '&mkp MB5'
   - F4
   - F5
   - F6
