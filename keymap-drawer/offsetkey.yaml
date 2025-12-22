@@ -3,7 +3,7 @@ layers:
   BASE:
   - {t: '$$mdi:keyboard-esc$$', h: '2'}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: F2, h: '$$mdi:mouse-scroll-wheel$$'}
   - $$mdi:mouse-right-click-outline$$
   - F4
   - F5
