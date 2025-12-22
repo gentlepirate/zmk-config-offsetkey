@@ -65,12 +65,12 @@ layers:
   - B
   - '&mkp MB4'
   - '&mkp MB5'
-  - {t: '[', h: '3', s: '{'}
-  - {t: ']', h: '1', s: '}'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '3'}
+  - {t: '$$mdi:backspace$$', h: '1'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
-  - $$mdi:apple-keyboard-option$$
-  - '2'
+  - {t: '-', h: '1', s: _}
+  - {t: '=', h: '3', s: +}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -155,7 +155,7 @@ layers:
   - {t: '$$mdi:pan-down$$', type: held}
   - $$mdi:pan-up$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -237,12 +237,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
+  - '{'
+  - '}'
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - _
+  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
@@ -328,7 +328,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
