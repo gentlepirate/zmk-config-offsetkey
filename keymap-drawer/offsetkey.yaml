@@ -67,7 +67,7 @@ layers:
   - '&mkp MB5'
   - {t: '[', h: '3', s: '{'}
   - {t: ']', h: '1', s: '}'}
-  - {t: '$$mdi:keyboard-return$$', h: 'Sft+$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-option$$
   - '2'
