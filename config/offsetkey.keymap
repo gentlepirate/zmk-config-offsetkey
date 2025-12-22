@@ -26,29 +26,31 @@
             quick-tap-ms = <180>;
         };
 
-        msc_dec: msc_dec {
+        encoder_msc: encoder_msc {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "MSC_DEC";
+            label = "ENCODER_MSC";
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_Y(-20)>, <&msc MOVE_Y(20)>;
 
             tap-ms = <100>;
         };
 
-        mouse_press: mouse_press {
+        mo_kp: mo_kp {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOUSE_PRESS";
+            label = "MO_KP";
             bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        encoder_msc_var: encoder_msc_var {
+        encoder_kp_var: encoder_kp_var {
             compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ENCODER_MSC_VAR";
+            label = "ENCODER_KP_VAR";
             #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+            bindings = <&kp>, <&kp>;
+
+            tap-ms = <150>;
         };
     };
 
@@ -66,16 +68,16 @@
 
         BASE {
             bindings = <
-&mkp LCLK          &mkp RCLK   &kp F2               &kp F3           &kp F4     &kp F5       &kp F6      &kp F7     &kp F8               &kp F9       &kp F10      &kp F11        &kp F12             &kp BSPC         &kp CAPS                    &kp NUMBER_6
-&lt 2 TAB          &kp Q       &kp W                &kp E            &kp R      &kp T                    &kp Y      &kp U                &kp I        &kp O        &kp P          &lt 2 LEFT_BRACKET  &kp RBKT         &kp BSLH       &kp PAGE_UP  &kp T
-&mt LSHIFT ESCAPE  &kp A       &kp S                &kp D            &kp F      &kp G                    &kp H      &kp J                &kp K        &kp L        &kp BACKSPACE  &mt RSHIFT DELETE   &mt RCTRL ENTER  &kp PAGE_DOWN               &kp G
-&kp LCMD           &kp Z       &kp X                &kp C            &kp V      &kp B                    &kp N      &kp M                &kp COMMA    &kp DOT      &kp FSLH       &kp RSHFT           &kp UP_ARROW     &kp DELETE                  &kp B
-&kp BACKSPACE      &kp DELETE  &mt LEFT_ALT DELETE  &mt LCTRL SPACE             &lt 1 ENTER                         &lt 1 SPACE          &lt 2 MINUS  &lt 3 EQUAL  &kp RCTRL      &kp LEFT            &kp DOWN         &kp RIGHT                   &kp SPACE
-&mkp RCLK          &mkp MB4    &mkp MB5             &mkp LCLK        &mkp MCLK  &kp SPACE                &mkp LCLK  &mouse_press 3 LCLK  &mkp RCLK    &none
+&mkp LCLK          &mkp RCLK   &kp F2               &kp F3           &kp F4     &kp F5       &kp F6      &kp F7     &kp F8         &kp F9       &kp F10      &kp F11        &kp F12             &kp BSPC         &kp CAPS                    &kp NUMBER_6
+&lt 2 TAB          &kp Q       &kp W                &kp E            &kp R      &kp T                    &kp Y      &kp U          &kp I        &kp O        &kp P          &lt 2 LEFT_BRACKET  &kp RBKT         &kp BSLH       &kp PAGE_UP  &kp T
+&mt LSHIFT ESCAPE  &kp A       &kp S                &kp D            &kp F      &kp G                    &kp H      &kp J          &kp K        &kp L        &kp BACKSPACE  &mt RSHIFT DELETE   &mt RCTRL ENTER  &kp PAGE_DOWN               &kp G
+&kp LCMD           &kp Z       &kp X                &kp C            &kp V      &kp B                    &kp N      &kp M          &kp COMMA    &kp DOT      &kp FSLH       &kp RSHFT           &kp UP_ARROW     &kp DELETE                  &kp B
+&kp BACKSPACE      &kp DELETE  &mt LEFT_ALT DELETE  &mt LCTRL SPACE             &lt 1 ENTER                         &lt 1 SPACE    &lt 2 MINUS  &lt 3 EQUAL  &kp RCTRL      &kp LEFT            &kp DOWN         &kp RIGHT                   &kp SPACE
+&mkp RCLK          &mkp MB4    &mkp MB5             &mkp LCLK        &mkp MCLK  &kp SPACE                &mkp LCLK  &mo_kp 3 LCLK  &mkp RCLK    &none
             >;
 
             label = "BASE";
-            sensor-bindings = <&msc_dec>;
+            sensor-bindings = <&encoder_kp_var LEFT RIGHT>;
         };
 
         layer_1 {
@@ -87,8 +89,6 @@
 &trans        &trans          &trans           &msc SCRL_DOWN                 &msc SCRL_UP                         &mkp RCLK  &trans        &trans           &trans    &trans            &msc MOVE_Y(50)  &trans               &trans
 &msc SCRL_UP  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans         &trans                    &trans     &trans     &trans        &trans
             >;
-
-            sensor-bindings = <&msc_dec>;
         };
 
         layer_2 {
@@ -100,8 +100,6 @@
 &trans     &trans           &kp LEFT_BRACE  &kp RIGHT_BRACE              &mkp LCLK                                 &trans          &kp UNDER        &kp PLUS              &trans                 &trans             &bt BT_CLR_ALL  &bt BT_CLR           &trans
 &trans     &trans           &trans          &trans           &trans      &trans                   &trans           &trans          &trans           &trans
             >;
-
-            sensor-bindings = <&encoder_msc_var SCRL_UP SCRL_DOWN>;
         };
 
         layer_3 {
