@@ -210,7 +210,7 @@ layers:
   - PgDn
   - PG UP
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
   - RGB OFF
   - RGB ON
   - RGB EFF
