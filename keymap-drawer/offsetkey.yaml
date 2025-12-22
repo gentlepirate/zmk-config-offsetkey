@@ -87,8 +87,8 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   '1':
-  - {t: '`', s: '~'}
-  - F1
+  - '&mkp MB4'
+  - '&mkp MB5'
   - F2
   - F3
   - F4
