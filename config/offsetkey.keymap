@@ -89,6 +89,8 @@
 &trans        &trans          &trans           &msc SCRL_DOWN                 &msc SCRL_UP                         &mkp RCLK  &trans        &trans           &trans    &trans            &msc MOVE_Y(50)  &trans               &trans
 &msc SCRL_UP  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans         &trans                    &trans     &trans     &trans        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_2 {
