@@ -87,7 +87,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   '1':
-  - '&mkp MB4'
+  - $$mdi:backspace-reverse-outline$$
   - '&mkp MB4'
   - '&mkp MB5'
   - '&mkp MB5'
