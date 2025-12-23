@@ -16,7 +16,7 @@ layers:
   - F12
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
   - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - Q
   - W
