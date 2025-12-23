@@ -15,7 +15,7 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - Q
@@ -61,7 +61,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:arrow-up-bold$$
-  - $$mdi:backspace-reverse-outline$$
+  - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
@@ -80,7 +80,7 @@ layers:
   - '&mkp MB4'
   - '&mkp MB5'
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:mouse-left-click-outline$$', h: '3'}
