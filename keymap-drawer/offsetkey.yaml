@@ -80,7 +80,7 @@ layers:
   - '&mkp MB4'
   - '&mkp MB5'
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:mouse-right-click-outline$$'}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:mouse-left-click-outline$$', h: '3'}
