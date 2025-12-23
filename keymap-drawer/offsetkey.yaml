@@ -3,7 +3,7 @@ layers:
   BASE:
   - {t: '$$mdi:keyboard-esc$$', h: '2'}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:mouse-right-click-outline$$', s: '2'}
   - {t: F3, h: '$$mdi:mouse-scroll-wheel$$'}
   - F4
   - F5
@@ -16,7 +16,7 @@ layers:
   - F12
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-caps$$
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - Q
   - W
