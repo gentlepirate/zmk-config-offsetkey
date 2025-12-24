@@ -205,19 +205,19 @@ layers:
   - {type: held alternate}
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
-  - PgDn
-  - PG UP
-  - END
   - '~'
-  - RGB OFF
-  - RGB ON
-  - RGB EFF
-  - RGB EFR
-  - ':'
-  - '"'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - _
+  - +
   - Ins
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
