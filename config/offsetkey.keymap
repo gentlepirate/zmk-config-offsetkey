@@ -41,7 +41,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            
         };
 
         encoder_kp_var: encoder_kp_var {
